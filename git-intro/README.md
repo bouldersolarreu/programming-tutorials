@@ -1,6 +1,7 @@
 # GitHub Intro
 ## BSA REU 2022
-These are instructions for setting up GitHub on your own computer if you haven't before. In this quick tutorial, we'll be showing you how to `clone` a *repository* of code found on GitHub and `fork` it to make a copy of your own. We'll describe how to `pull` to retrieve updated versions of code. Then we'll demonstrate editing this code, then `add`ing, `commit`ting and `push`ing to track the changes you made.
+
+These are instructions for setting up GitHub on your own computer if you haven't before. In this quick tutorial, we'll be showing you how to `clone` a *repository* of code found on GitHub and `fork` it to make a copy of your own. We'll describe how to `pull` to retrieve updated versions of code. Then we'll demonstrate editing this code, then `add`ing, `commit`ting and `push`ing to track the changes you made. **TO DO items will be bolded.**
 
 ### What is GitHub?
 GitHub is a code hosting platform used for version control and collaboration, to keep track of changes made in code over time by an unlimited number of people. This is a very powerful and useful tool to be able to use!
