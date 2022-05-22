@@ -28,6 +28,8 @@ You will work in groups to help each other out, but your work will be performed 
 * Find the maximum and minimum longwave values.
 * On what date do the data start?
 * On what date do the data end?
+* What do you notice about the minimum values? Does something seem off?
+* Now try to do the same calculations again, removing the erroneous data.
 
 ## Task 4: Write a function
 
