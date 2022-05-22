@@ -1,0 +1,9 @@
+name: reu_tutorial
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+  - ipython
+  - ipywidgets
