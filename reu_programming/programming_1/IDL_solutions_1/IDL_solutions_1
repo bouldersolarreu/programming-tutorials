@@ -1,0 +1,69 @@
+Open data file
+IDL> data_file = './data/noaa_goes12_xrs_1m_milliseconds.csv'
+
+Read in data
+IDL> goes_data = read_csv(data_file, HEADER=GoesHeader, N_TABLE_HEADER=1, TABLE_HEADER=GoesTableHeader)
+
+Print the header to see the column names
+IDL> print,GoesTableHeader
+
+Using help will show you the dimensions of the arrays
+IDL> help, goes_data, /STRUCTURES
+
+Define the time, shortwave, and longwave arrays
+IDL> time = goes_data.field1
+IDL> shortwave = goes_data.field2
+IDL> longwave = goes_data.field3
+
+Find if there are any explicit NaNs (more on this later)
+IDL> time_nan = where(~finite(time), /null)
+IDL> print,time_nan
+IDL> long_nan = where(~finite(longwave), /null)
+IDL> print,long_nan
+IDL> short_nan = where(~finite(shortwave), /null)
+IDL> print,short_nan
+
+Print the min and max values
+IDL> print,max(shortwave)
+IDL> print,min(shortwave)
+IDL> print,min(longwave)
+IDL> print,max(longwave)
+
+At this point you should realize there's something weird going on. The min values don't make sense.
+
+Define the indices with the bad values
+IDL> bad_ind = where(longwave EQ -100000.00, count)
+IDL> print,bad_ind
+
+Turn the bad values to NaNs
+IDL> IF (count GT 0) THEN time[bad_ind] = !VALUES.F_NAN
+IDL> IF (count GT 0) THEN longwave[bad_ind] = !VALUES.F_NAN
+IDL> IF (count GT 0) THEN shortwave[bad_ind] = !VALUES.F_NAN
+
+Print the min values again
+IDL> print,min(shortwave)
+IDL> print,min(longwave)
+
+Print the last time (index -1) and first time (index 0)
+IDL> print,time[-1]
+IDL> print,time[0]
+
+Plot the data with titles and axis labels
+IDL> plot,time,longwave, title='Time vs. Shortwave', xtitle='time (milliseconds since 1970-01-01)', ytitle='shortwave (W/m^2)'
+IDL> plot,time,longwave, title='Time vs. Longwave', xtitle='time (milliseconds since 1970-01-01)', ytitle='longwave (W/m^2)'
+
+Create a new file called avg_sw_lw.pro in the current directory.
+
+This should be the contents of avg_sw_lw.pro
+FUNCTION avg_sw_lw, sw, lw
+  return, (sw+lw)/2.
+END
+
+Now you need to compile
+IDL> .compile avg_sw_lw
+
+And run for the shortwave and longwave arrays
+IDL> avg_wave = avg_sw_lw(shortwave, longwave)
+
+Make a plot
+IDL> plot,time,avg_wave, title='Time vs. Average', xtitle='time (milliseconds since 1970-01-01)', ytitle='Average (W/m^2)'
