@@ -10,6 +10,7 @@ You will work in groups to help each other out, but your work will be performed 
 ## Task 1: Get your data
 
 * Look for a folder named *data* and you will find a csv file called *noaa_goes12_xrs_1m.csv*.
+ 	* If you are using IDL, you may prefer to use *noaa_goes12_xrs_1m_milliseconds.csv* due to limitations with how IDL treats timestamp strings.
 * Download this csv file to your local computer.
 * Open this csv file in your programming language of choice.
 
