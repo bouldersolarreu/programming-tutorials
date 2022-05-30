@@ -1,11 +1,12 @@
 # Programming Skills 2 - Bootcamp Day 2
+## Summer 2022
 
 This skills tutorial will be largely self-guided and is aimed to help you get some experience downloading and doing exploratory data analysis on unfamiliar data.
 
 ## Pre-requisites
 You will need to have basic packages installed in your programming language of choice (either Python or IDL).
 
-For Python, we recommend numpy, matplotlib, and pandas (at minimum).
+For Python, we recommend numpy, matplotlib, and pandas (at minimum). For these tasks, some packages that might be helpful are os and sunpy.
 
 You will work in groups to help each other out, but your work will be performed in your local environment.
 
