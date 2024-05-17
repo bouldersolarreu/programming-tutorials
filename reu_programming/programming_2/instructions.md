@@ -11,9 +11,9 @@ You will work in groups to help each other out, but your work will be performed 
 
 ## Task 1: Get your data
 
-* The Atmospheric Image Assembly (AIA) is an instrument onboard the Solar Dynamics Observatory which aims to look at different layers of the Sun. The link below (which will eventually expire) is a request made from Stanford's Joint Science Operations Center database for 17.1 nm wavelength AIA images, beginning on October 13, 2014 for 10 days, every 6 hours. Click on the link and view the request for data in your web browser. We want to figure out how to import these so we can open and manipulate them in our programs.
+* The Atmospheric Image Assembly (AIA) is an instrument onboard the Solar Dynamics Observatory which aims to look at different layers of the Sun. The link below (which will eventually expire) is a request made from Stanford's Joint Science Operations Center database for 17.1 nm wavelength AIA images, beginning on May 10th, 2024. Click on the link and view the request for data in your web browser. We want to figure out how to import these so we can open and manipulate them in our programs.
 
-https://jsoc1.stanford.edu/SUM2/D1515570274/S00000/ 
+https://jsoc1.stanford.edu/SUM14/D1748556141/S00000/
 
 * Download the data.
 * Based on the format of the data, what packages do you think will be useful for handling it? Feel free to google and discuss with group members. If you get stuck, ask for help!
@@ -40,6 +40,7 @@ https://jsoc1.stanford.edu/SUM2/D1515570274/S00000/
 * What more can you tell us about the data?
 * Find different ways to retrieve the data.
 
-
+## Hint:
+You can use the [SWxTREC data viewer](https://lasp.colorado.edu/space-weather-portal/data/display?lz=N4IghgxgLglgbgUwLQCcwDsDmCQC4QDaAjAOxECsATAJzWUAMjjANKRdfQCxNMC6IzEAHsArlAQpUGbHkIUiADnIcAbEWorOJVmXIBmcpv0LKe-oIAOAGyFQAzrOAAdENdt2XuAs5AATMFBgdgj2nt4u-oHBUACSvp4uMHYA7mAA%2Bna%2BQmlgMOlsaQBmMFYIdmlQABYw6OgI8QIuaFgIAGpgKB544SDoYAC2CAkgIihWLswRSdZgAJ4AcgNDeC4x-WDYAAQAqgBKADIuAL68J5PCFrBC6F24wEdnLnDDRAB0b-THAiAoQslIECEVlkBEorHMIDsgQgAGt6rJCmArMEQEcgA) to explore the data
 
 
