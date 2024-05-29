@@ -11,17 +11,11 @@ You will work in groups to help each other out, but your work will be performed 
 
 ## Task 1: Get your data
 
-<<<<<<< Updated upstream
-* The Atmospheric Image Assembly (AIA) is an instrument onboard the Solar Dynamics Observatory which aims to look at different layers of the Sun. The link below (which will eventually expire) is a request made from Stanford's Joint Science Operations Center database for 17.1 nm wavelength AIA images, beginning on May 10th, 2024. Click on the link and view the request for data in your web browser. We want to figure out how to import these so we can open and manipulate them in our programs.
-
-https://jsoc1.stanford.edu/SUM14/D1748556141/S00000/
-=======
 * The Atmospheric Image Assembly (AIA) is an instrument onboard the Solar Dynamics Observatory which aims to look at different layers of the Sun. The link below (which will eventually expire) is a request made from Stanford's Joint Science Operations Center database for 17.1 nm wavelength AIA images, beginning on May 9th, 2024 for 10 days, every 6 hours. This time span includes the solar flare which caused Aurora across much of North America in May. Click on the link and view the request for data in your web browser. We want to figure out how to import these so we can open and manipulate them in our programs.
 
 This link was generated with the query `aia.lev1_euv_12s[2024-05-09T00:00:00Z/15d@6h][171]{image}`
 
 https://jsoc1.stanford.edu/SUM2/D1749438062/S00000/
->>>>>>> Stashed changes
 
 * Download the data.
 * Based on the format of the data, what packages do you think will be useful for handling it? Feel free to google and discuss with group members. If you get stuck, ask for help!
