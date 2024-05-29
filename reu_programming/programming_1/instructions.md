@@ -1,4 +1,4 @@
-# Programming Skills 1 - Bootcamp Day 2
+# Programming Skills 1 
 
 ## Pre-requisites
 You will need to have basic packages installed in your programming language of choice (either Python or IDL).

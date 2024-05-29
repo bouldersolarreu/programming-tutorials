@@ -1,4 +1,4 @@
-# Programming Skills 2 - Bootcamp Day 2
+# Programming Skills 2
 
 This skills tutorial will be largely self-guided and is aimed to help you get some experience downloading and doing exploratory data analysis on unfamiliar data.
 
