@@ -15,7 +15,7 @@ You will work in groups to help each other out, but your work will be performed 
 
 This link was generated with the query `aia.lev1_euv_12s[2024-05-09T00:00:00Z/15d@6h][171]{image}`
 
-https://jsoc1.stanford.edu/SUM2/D1749438062/S00000/
+https://jsoc1.stanford.edu/SUM66/D1875777473/S00000
 
 * Download the data.
 * Based on the format of the data, what packages do you think will be useful for handling it? Feel free to google and discuss with group members. If you get stuck, ask for help!
