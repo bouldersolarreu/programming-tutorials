@@ -17,7 +17,25 @@ This link was generated with the query `aia.lev1_euv_12s[2024-05-09T00:00:00Z/15
 
 https://jsoc1.stanford.edu/SUM66/D1875777473/S00000
 
-* Download the data.
+
+### To download the data:
+
+```
+!wget -rq https://jsoc1.stanford.edu/SUM66/D1875777473/S00000
+
+import re
+from pathlib import Path
+from urllib.request import urlretrieve
+
+html = Path("index.html").read_text()
+
+Path("data").mkdir(exist_ok=True)
+for url in re.findall(r'HREF="(https://[^"]+\.fits)"', html):
+    print("Retrieving Data")
+    urlretrieve(url, Path("data") / url.rsplit("/", 1)[1])
+```
+
+* Download the data
 * Based on the format of the data, what packages do you think will be useful for handling it? Feel free to google and discuss with group members. If you get stuck, ask for help!
 
 To check your work, or if you're curious to explore other SDO instruments, you can explore the [Space Weather data portal (run by LASP)](https://lasp.colorado.edu/space-weather-portal/data)
