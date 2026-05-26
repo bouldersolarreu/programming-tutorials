@@ -2,10 +2,16 @@
 
 This skills tutorial will be largely self-guided and is aimed to help you get some experience downloading and doing exploratory data analysis on unfamiliar data.
 
+REMINDER: Please do not use AI during this assignment, to learn about reading documentation and to have an opportunity to work together with your fellow students.
+
 ## Pre-requisites
 You will need to have basic packages installed in your programming language of choice (either Python or IDL).
 
 For Python, we recommend numpy, matplotlib, and pandas (at minimum). For these tasks, some packages that might be helpful are os and sunpy.
+
+To install sunpy:
+
+`!pip install sunpy[all]`
 
 You will work in groups to help each other out, but your work will be performed in your local environment.
 
@@ -15,17 +21,22 @@ You will work in groups to help each other out, but your work will be performed 
 
 This link was generated with the query `aia.lev1_euv_12s[2024-05-09T00:00:00Z/15d@6h][171]{image}`
 
-https://jsoc1.stanford.edu/SUM66/D1875777473/S00000
 
-* Download the data.
+### To download the data:
+
+```
+!wget -rq https://jsoc1.stanford.edu/SUM38/D1997335454/S00000/
+```
+
+* Download the data
 * Based on the format of the data, what packages do you think will be useful for handling it? Feel free to google and discuss with group members. If you get stuck, ask for help!
 
 To check your work, or if you're curious to explore other SDO instruments, you can explore the [Space Weather data portal (run by LASP)](https://lasp.colorado.edu/space-weather-portal/data)
 
 ## Task 2: Data exploration
-* Plot a single image. Or 2 or 3.
-* Explore and see what types of information is contained in this file. Can you find any particularly useful documentation?
 * How many data files do you have?
+* Plot a single image. Or 2 or 3. (Hint: the sunpy.map.Map class is a good place to start)
+* Explore and see what types of information is contained in this file. Can you find any particularly useful documentation?
 * What dates do the data start and end?
 
 ## Task 3: Basic calculations
