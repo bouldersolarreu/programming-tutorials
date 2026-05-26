@@ -7,7 +7,7 @@ You will need to have basic packages installed in your programming language of c
 
 For Python, we recommend numpy, matplotlib, and pandas (at minimum). For these tasks, some packages that might be helpful are os and sunpy.
 
-You will work in groups to help each other out, but your work will be performed in your local environment.
+You will work in groups to help each other out, but your work will be performed on your machine.
 
 ## Task 1: Get your data
 
@@ -15,24 +15,11 @@ You will work in groups to help each other out, but your work will be performed 
 
 This link was generated with the query `aia.lev1_euv_12s[2024-05-09T00:00:00Z/15d@6h][171]{image}`
 
-https://jsoc1.stanford.edu/SUM66/D1875777473/S00000
-
 
 ### To download the data:
 
 ```
-!wget -rq https://jsoc1.stanford.edu/SUM66/D1875777473/S00000
-
-import re
-from pathlib import Path
-from urllib.request import urlretrieve
-
-html = Path("index.html").read_text()
-
-Path("data").mkdir(exist_ok=True)
-for url in re.findall(r'HREF="(https://[^"]+\.fits)"', html):
-    print("Retrieving Data")
-    urlretrieve(url, Path("data") / url.rsplit("/", 1)[1])
+!wget -rq https://jsoc1.stanford.edu/SUM38/D1997335454/S00000/
 ```
 
 * Download the data
