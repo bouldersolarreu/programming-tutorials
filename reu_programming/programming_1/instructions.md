@@ -11,12 +11,8 @@ You will work in groups to help each other out, but your work will be performed 
 
 ## Task 1: Get your data
 
-<<<<<<< HEAD
-* Look for a folder named *data* and you will find a csv file called *noaa_goes12_xrs_1m.csv*.
-=======
 * To download your data: `!git clone --depth 1 https://github.com/bouldersolarreu/programming-tutorials.git`
 * Look for a folder named *data* inside programming-tutorials and you will find a csv file called *noaa_goes12_xrs_1m.csv*.
->>>>>>> 2026-updates
 	* If you are using IDL, you may prefer to use *noaa_goes12_xrs_1m_milliseconds.csv* due to limitations with how IDL treats timestamp strings.
 * Download this csv file to your local computer.
 * Open this csv file in your programming language of choice.
